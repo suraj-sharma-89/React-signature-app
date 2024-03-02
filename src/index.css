@@ -1,13 +1,171 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #e5efc1;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left h1 {
+  letter-spacing: 4px;
+  font-family: "Brush Script MT", cursive;
+  opacity: 0.5;
+  font-size: 24px;
+  margin-right: 20px; /* Add margin to separate h1 and button */
+}
+
+.bounce {
+  letter-spacing: 2px;
+  font-size: 10px;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 20px;
+  color: white;
+  background-color: #557b83;
+}
+
+.bounce:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05);
+}
+
+.main {
+  padding: 20px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.highlighted-section {
+  margin: 20px;
+}
+
+.highlighted-section h1 {
+  font-weight: 900;
+  font-family: Garamond, serif;
+  font-size: 20px;
+  padding: 20px;
+  overflow-wrap: break-word;
+  color: #557b83;
+}
+
+.highlighted-section button {
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  font-size: 14px; /* Reduced font size for smaller screens */
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid;
+  border-radius: 20px;
+  color: white;
+  background-color: #557b83;
+}
+
+.highlighted-section button:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vector-image-section img {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+  width: 100%; /* Ensure image fills its container */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+.popup-inner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.close-btn,
+.clear-btn,
+.save-btn {
+  font-size: 14px;
+}
+
+.signature-container {
+  width: 100%;
+  height: auto;
+}
+
+.signature-pad {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-left h1 {
+    font-size: 30px;
+    letter-spacing: 7px;
+    margin-right: 0; /* Remove margin to align h1 and button properly */
+  }
+
+  .bounce {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .content-section {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .highlighted-section h1 {
+    font-size: 2.4rem;
+    padding-left: 30px;
+  }
+
+  .highlighted-section button {
+    font-size: 17px;
+    padding: 17px;
+    margin: 30px;
+  }
+
+  .popup {
+    width: 60%;
+    max-width: 600px;
+  }
+
+  .close-btn,
+  .clear-btn,
+  .save-btn {
+    font-size: 10px;
+  }
 }
