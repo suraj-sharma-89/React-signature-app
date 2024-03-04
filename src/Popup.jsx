@@ -16,7 +16,7 @@ const Popup = () => {
   //for clear  the signature canvas
   const clear = () => signCanvas.current.clear();
 
-  //for save image
+  //for save the signature
   const save = () => {
     // Get signature canvas and context
     const canvas = signCanvas.current.getCanvas();
@@ -49,10 +49,8 @@ const Popup = () => {
       document.body.appendChild(downloadLink);
       downloadLink.click();
 
-      // Remove the anchor element from the document body
       document.body.removeChild(downloadLink);
 
-      // Close the popup after saving
       togglePopup();
     };
     img.src = signatureData;
@@ -65,7 +63,9 @@ const Popup = () => {
           <h1>MySignature</h1>
         </div>
         <div class="header-right">
-          <button className="bounce">Sign Your Signature</button>
+          <button className="bounce" onClick={togglePopup}>
+            Sign Your Signature
+          </button>
         </div>
       </header>
       <main>

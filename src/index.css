@@ -22,7 +22,7 @@ header {
   font-family: "Brush Script MT", cursive;
   opacity: 0.5;
   font-size: 24px;
-  margin-right: 20px; /* Add margin to separate h1 and button */
+  margin-right: 20px;
 }
 
 .bounce {
@@ -71,7 +71,7 @@ header {
   letter-spacing: 3px;
   font-weight: 700;
   font-family: Garamond, serif;
-  font-size: 14px; /* Reduced font size for smaller screens */
+  font-size: 14px;
   padding: 10px 20px;
   margin: 10px 0;
   border: 1px solid;
@@ -91,7 +91,7 @@ header {
   padding: 20px;
   max-width: 100%;
   height: auto;
-  width: 100%; /* Ensure image fills its container */
+  width: 100%;
 }
 
 .popup {
@@ -134,7 +134,7 @@ header {
   .header-left h1 {
     font-size: 30px;
     letter-spacing: 7px;
-    margin-right: 0; /* Remove margin to align h1 and button properly */
+    margin-right: 0;
   }
 
   .bounce {
